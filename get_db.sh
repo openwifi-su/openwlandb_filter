@@ -1,7 +1,7 @@
 #!/bin/bash
 set +ue
 set -x
-wget -O"db.tar.bz2" http://www.openwlanmap.org/db.tar.bz2
+wget -O"db.tar.bz2" http://www.openwifi.su/db/db.tar.bz2
 bunzip2 -c db.tar.bz2 > db.tar
 tar xvf db.tar
 MD5=`md5sum db/db.csv`
